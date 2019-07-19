@@ -3,9 +3,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'print python version'
-		python --version
-		pwd
+                sh 'echo "print python version"'
+		sh '''
+			python --version
+			pwd
+		'''
             }
         }
     }
