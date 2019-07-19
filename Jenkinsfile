@@ -14,7 +14,7 @@ pipeline {
 	
     post {
     success {
-        mail to: 'adsl123gg2008@gmail.com',
+        mail to: 'adsl123gg2008@126.com',
              subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
              body: "Something is wrong with ${env.BUILD_URL}"
     }
